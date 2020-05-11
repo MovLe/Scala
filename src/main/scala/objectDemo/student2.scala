@@ -39,5 +39,6 @@ object Student2{
     println("------选修课程---------")
 
     for(s <- s2.courseList)println(s.courseName+"\t"+s.credit)
+
   }
 }
