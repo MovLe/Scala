@@ -31,7 +31,5 @@ object Array {
     //遍历数组
     d.foreach(println)
 
-
-
   }
 }
