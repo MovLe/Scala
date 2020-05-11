@@ -1,3 +1,5 @@
+package base
+
 /**
  * @ClassName WhileCircle
  * @MethodDesc: while循环与dowhile循环还有foreach迭代
@@ -34,4 +36,3 @@ object WhileCircle {
   }
 
 }
-

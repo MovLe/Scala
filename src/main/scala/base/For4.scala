@@ -1,3 +1,5 @@
+package base
+
 /**
  * @ClassName For4
  * @MethodDesc: for循环的四种写法

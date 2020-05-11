@@ -1,7 +1,9 @@
+package base
+
 import java.io.{File, FileInputStream, PrintWriter}
 
-import scala.io.Source.fromFile
-import scala.io.Source.fromURL
+import scala.io.Source.{fromFile, fromURL}
+
 /**
  * @ClassName LazyObject
  * @MethodDesc: ScalaIO
