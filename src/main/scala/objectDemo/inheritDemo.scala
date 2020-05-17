@@ -8,27 +8,27 @@ package objectDemo
  * @Version 1.0
  * @Email movle_xjk@foxmail.com
  **/
-class Person(val name:String,val age:Int){
+class Person1(val name:String,val age:Int){
   def sayHello():String = "Hello "+name+" and age is "+age
 }
 
-class Employee (override val name:String,override val age:Int,val salary:Int) extends Person(name,age){
+class Employee (override val name:String,override val age:Int,val salary:Int) extends Person1(name,age){
 
   override def sayHello(): String = "bye "+name+" and age is "+age+" and salary is "+salary
 }
 
 object inheritDemo {
   def main(args: Array[String]): Unit = {
-    var p1 = new Person("Tom",20)
+    var p1 = new Person1("Tom",20)
     println(p1.sayHello())
 
 
-    var p2:Person = new Employee("Mike",25,1000)
+    var p2:Person1 = new Employee("Mike",25,1000)
 
     println(p2.sayHello())
 
     //使用匿名子类
-    var p3:Person = new Person("Jerry",26){
+    var p3:Person1 = new Person1("Jerry",26){
       override def sayHello(): String = "Hello "+name+" and age is "+age
     }
     println(p3.sayHello())
