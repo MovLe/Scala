@@ -4,7 +4,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
  * @ClassName WordCount
- * @MethodDesc: TODO WordCount功能介绍
+ * @MethodDesc: 本地模式scala编写WordCount
  * @Author Movle
  * @Date 5/17/20 10:21 上午
  * @Version 1.0
