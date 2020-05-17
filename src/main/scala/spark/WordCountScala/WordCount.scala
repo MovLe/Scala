@@ -24,5 +24,6 @@ object WordCount {
 
     result.foreach(println)
 
+    sc.stop()
   }
 }
