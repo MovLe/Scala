@@ -33,7 +33,7 @@ object MyTomcatLogPartitioner {
 
           val jspName = line2.substring(line2.lastIndexOf("/")+1)
 
-          (jspName,1)
+          (jspName,line)
         }
       )
 
@@ -42,7 +42,7 @@ object MyTomcatLogPartitioner {
 
     val rdd3 = rdd1.partitionBy(myPartitioner)
 
-    rdd3.saveAsTextFile("/users/macbook/TestInfo/0517/test_partition")
+    rdd3.saveAsTextFile("/users/macbook/TestInfo/0518/test_partition")
 
     sc.stop()
   }
