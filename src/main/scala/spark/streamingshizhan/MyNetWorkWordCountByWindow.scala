@@ -25,7 +25,7 @@ object MyNetWorkWordCountByWindow {
 
     val ssc = new StreamingContext(conf,Seconds(1))
 
-    val lines = ssc.socketTextStream("192.168.1.121", 1235, StorageLevel.MEMORY_ONLY)
+    val lines = ssc.socketTextStream("192.168.31.132", 1235, StorageLevel.MEMORY_ONLY)
 
     val words = lines.flatMap(_.split(" ")).map((_,1))
 
