@@ -20,6 +20,7 @@ case class Score(sno:String,cno:String,degree:String)
 
 case class Teacher(tno:String,tname:String,tsex:String,tbirthday:String,tprof:String,tdepart:String)
 
+import java.text.SimpleDateFormat
 object SparkSQLExample {
 
   def main(args: Array[String]): Unit = {
@@ -27,6 +28,12 @@ object SparkSQLExample {
 
     Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
     //Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
+
+    def getDate(time: String) = {
+      val now: Long = System.currentTimeMillis()
+      val df: SimpleDateFormat = new SimpleDateFormat(time)
+      df.format(now)
+    }
 
     val spark = SparkSession.builder().master("local").appName("SparkSQLExample").getOrCreate()
 
